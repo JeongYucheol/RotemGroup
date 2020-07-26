@@ -86,7 +86,7 @@ http://www.templatemo.com/tm-515-eatery
                                         <div class="col-md-8 col-sm-12">
                                              <h3>인테리어 &amp; 건설</h3>
                                              <h1>한국 전통의 따뜻함과 정겨움이 느껴지는 한옥 카페&스튜디오</h1>
-                                             <a href="#team" class="section-btn btn btn-default smoothScroll">둘러보기</a>
+                                             <a href="#menu" class="section-btn btn btn-default smoothScroll">둘러보기</a>
                                         </div>
                                    </div>
                               </div>
@@ -110,7 +110,7 @@ http://www.templatemo.com/tm-515-eatery
                                         <div class="col-md-8 col-sm-12">
                                              <h3>자외선 차단도 하고 공간의 세련미까지 더해주는 블라인드의 활용법</h3>
                                              <h1>블라인드의 종류와 컬러에 따라 공간의 분위기를 좌지우지합니다. </h1>
-                                             <a href="#contact" class="section-btn btn btn-default smoothScroll">둘러보기</a>
+                                             <a href="#menu" class="section-btn btn btn-default smoothScroll">둘러보기</a>
                                         </div>
                                    </div>
                               </div>
@@ -168,7 +168,7 @@ http://www.templatemo.com/tm-515-eatery
                               <img src="images/team-image1.jpg" class="img-responsive" alt="">
                                    <div class="team-hover">
                                         <div class="team-item">
-                                             <h4>Duis vel lacus id magna mattis vehicula</h4>
+                                             <h4>오피스 사무실 주거공간 인테리어</h4>
                                              <ul class="social-icon">
                                                   <li><a href="#" class="fa fa-linkedin-square"></a></li>
                                                   <li><a href="#" class="fa fa-envelope-o"></a></li>
@@ -187,7 +187,7 @@ http://www.templatemo.com/tm-515-eatery
                               <img src="images/team-image2.jpg" class="img-responsive" alt="">
                                    <div class="team-hover">
                                         <div class="team-item">
-                                             <h4>Cras suscipit neque quis odio feugiat</h4>
+                                             <h4>근린생활시설 주거시설 공장시설</h4>
                                              <ul class="social-icon">
                                                   <li><a href="#" class="fa fa-instagram"></a></li>
                                                   <li><a href="#" class="fa fa-flickr"></a></li>
@@ -206,7 +206,7 @@ http://www.templatemo.com/tm-515-eatery
                               <img src="images/team-image3.jpg" class="img-responsive" alt="">
                                    <div class="team-hover">
                                         <div class="team-item">
-                                             <h4>Etiam auctor enim tristique faucibus</h4>
+                                             <h4>엔티크 디자인 모던 데코레이션</h4>
                                              <ul class="social-icon">
                                                   <li><a href="#" class="fa fa-github"></a></li>
                                                   <li><a href="#" class="fa fa-google"></a></li>
@@ -527,7 +527,15 @@ http://www.templatemo.com/tm-515-eatery
                </div>
           </div>
      </footer>
-
+     <div
+       id="kakao-talk-channel-chat-button"
+       data-channel-public-id="_xmFKhK"
+       data-title="consult"
+       data-size="small"
+       data-color="yellow"
+       data-shape="mobile"
+       data-support-multiple-densities="true"
+     ></div>
 
      <!-- SCRIPTS -->
      <script src="js/jquery.js"></script>
@@ -540,4 +548,19 @@ http://www.templatemo.com/tm-515-eatery
      <script src="js/custom.js"></script>
 
 </body>
+<script>
+  window.kakaoAsyncInit = function() {
+    Kakao.Channel.createChatButton({
+      container: '#kakao-talk-channel-chat-button',
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://developers.kakao.com/sdk/js/kakao.plusfriend.min.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  })(document, 'script', 'kakao-js-sdk');
+</script>
 </html>
